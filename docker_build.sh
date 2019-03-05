@@ -1,0 +1,1 @@
+docker build -t deepomatic_face_detection .

@@ -24,6 +24,6 @@ def recognize_face():
         current_box = {'top': top, 'right': right, 'bottom': bottom, 'left': left}
         ret.append({'name': name, 'box': current_box})
 
-    return dict(data=ret)
+    return dict(results=ret)
 
 run(host='localhost', port=8666)
