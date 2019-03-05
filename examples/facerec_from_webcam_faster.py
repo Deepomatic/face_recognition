@@ -68,6 +68,7 @@ while True:
 
     process_this_frame = not process_this_frame
 
+    print(face_names)
 
     # Display the results
     for (top, right, bottom, left), name in zip(face_locations, face_names):
@@ -86,7 +87,7 @@ while True:
         cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
 
     # Display the resulting image
-    cv2.imshow('Video', frame)
+    # cv2.imshow('Video', frame)
 
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):

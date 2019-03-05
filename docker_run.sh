@@ -1,0 +1,1 @@
+docker run  --rm -ti --privileged --net=host --ipc=host -p 8080:8080 -e DISPLAY=$DISPLAY -v $PWD/examples:/examples  -v /tmp/.X11-unix:/tmp/.X11-unix face_detection bash
