@@ -1,7 +1,8 @@
 docker run --restart always \
            -dti --privileged \
-           --net=host --ipc=host -p 8666:8666 \
-           -e DISPLAY=$DISPLAY \
-           -v /tmp/.X11-unix:/tmp/.X11-unix \
+           -p 8666:8666 \
            --name deepomatic_face_detection \
            deepomatic_face_detection
+
+# -e DISPLAY=$DISPLAY \
+# -v /home/pierre/deepomatic_data/face_recognition/examples:/root/face_recognition/examples \

@@ -26,4 +26,4 @@ def recognize_face():
 
     return dict(results=ret)
 
-run(host='localhost', port=8666)
+run(host='0.0.0.0', port=8666)
